@@ -1,2 +1,2 @@
 #!/bin/sh
-/usr/bin/docker run gcr.io/gcp-bugbounty/backdoor --privileged
+/usr/bin/docker run --privileged gcr.io/gcp-bugbounty/backdoor
