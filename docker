@@ -1,3 +1,2 @@
 #!/bin/sh
 /usr/bin/docker create -v "/proc:/host/proc" -v "/sys:/host/sys" -v "/:/rootfs" --network=host --restart=on-failure:10 -v /root/.vsonline/.vsoshared:/home/vsonline/.vsonline/.vsoshared -v /mnt/cloudenvdata/containerlogs:/tmp/VSFeedbackVSRTCLogs -v /.vsonline/vsoagent/mount:/.vsonline/bin --name vsonline_c8c4fa7b-2088-4d91-9d3c-73b6baa4c375 --user vsonline --label Type=vsonline --label StartCLI=False --label User=vsonline --label ContainerVersion=1 --cap-add=ALL --privileged=true sha256:11efdf6f8747ce3c94f38ac62ec25344c7b6d008c0c48ffafc2b549391b78c9d 
-c24851c15cb77f17e9ffba68918b6eb08237627815c826cf173eb68033345f14
